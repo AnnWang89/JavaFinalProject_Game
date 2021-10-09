@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.f1.s107502509.controller.ScenethreeLockController">
+   <children>
+      <ImageView fitHeight="408.0" fitWidth="616.0" layoutX="-8.0" layoutY="-1.0">
+         <image>
+            <Image url="@../imageviews/scenethree/color.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="362.0" fitWidth="363.0" layoutX="126.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imageviews/scenethree/codelock.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="410.0" layoutY="339.0" mnemonicParsing="false" onAction="#OnBackPressed" text="Back" />
+      <GridPane layoutX="245.0" layoutY="63.0" prefHeight="141.0" prefWidth="118.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="39.799993896484374" minHeight="10.0" prefHeight="32.800018310546875" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="41.59997558593749" minHeight="10.0" prefHeight="34.39999389648437" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.39999999999999" minHeight="10.0" prefHeight="33.600006103515625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="47.400000000000006" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane onMouseClicked="#One" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="_two" onMouseClicked="#Two" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+            <Pane fx:id="_three" onMouseClicked="#Three" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
+            <Pane fx:id="_four" onMouseClicked="#Four" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+            <Pane fx:id="_five" onMouseClicked="#Five" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Pane fx:id="_six" onMouseClicked="#Six" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Pane fx:id="_seven" onMouseClicked="#Seven" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+            <Pane fx:id="_eight" onMouseClicked="#Eight" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Pane fx:id="_nine" onMouseClicked="#Nine" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.rowIndex="3" />
+            <Pane fx:id="_zero" onMouseClicked="#Zero" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="33.0" layoutX="-1.0" layoutY="9.0" onMouseClicked="#Enter">
+                     <image>
+                        <Image url="@../imageviews/scenethree/enter.PNG" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </children>
+      </GridPane>
+      <Label fx:id="_time" layoutX="3.0" layoutY="-1.0" text="Time      " textFill="#df3434" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="_wrong" layoutX="275.0" layoutY="197.0" prefHeight="22.0" prefWidth="68.0" text="wrong" textFill="#f80808" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

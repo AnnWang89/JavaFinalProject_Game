@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.f1.s107502509.controller.StoryController">
+   <children>
+      <ImageView fitHeight="513.0" fitWidth="857.0">
+         <image>
+            <Image url="@../imageviews/other/castle.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="521.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="857.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.48854955280100115">
+               <stops>
+                  <Stop color="#02080dd0" />
+                  <Stop color="#0d056770" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="_line1" layoutX="38.0" layoutY="22.0" prefHeight="66.0" prefWidth="614.0" text="One day, the penguin was capture by a witch.&#10;You need to help the penguin escape from the castle.&#10;The witch will come back in 10 minute so there are only ten minute to escape.&#10;You may find clues in the castle.&#10;If the penguin fail to escape, it will be lock in the cage forever.&#10;Good Luck~~" textFill="#faf6f6" visible="false">
+         <font>
+            <Font name="Freestyle Script" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="_line4" layoutX="38.0" layoutY="260.0" prefHeight="66.0" prefWidth="614.0" text="You may find clues in the castle.&#10;" textFill="#faf6f6" visible="false">
+         <font>
+            <Font name="Freestyle Script" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="_line2" layoutX="38.0" layoutY="103.0" prefHeight="66.0" prefWidth="614.0" text="You need to help the penguin escape from the castle." textFill="#faf6f6" visible="false">
+         <font>
+            <Font name="Freestyle Script" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="_line3" layoutX="38.0" layoutY="184.0" prefHeight="66.0" prefWidth="1004.0" text="The witch will come back so there are only five minute to escape.&#10;" textFill="#faf6f6" visible="false">
+         <font>
+            <Font name="Freestyle Script" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="_line5" layoutX="38.0" layoutY="343.0" prefHeight="66.0" prefWidth="850.0" text="If the penguin fail to escape, it will be lock in the cage forever.&#10;" textFill="#faf6f6" visible="false">
+         <font>
+            <Font name="Freestyle Script" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="_line6" layoutX="38.0" layoutY="409.0" prefHeight="66.0" prefWidth="614.0" text="Good Luck~~" textFill="#faf6f6" visible="false">
+         <font>
+            <Font name="Freestyle Script" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="756.0" layoutY="426.0" onMouseClicked="#OnBackPressed" prefHeight="66.0" prefWidth="324.0" text="Back" textFill="#faf6f6">
+         <font>
+            <Font name="Freestyle Script" size="44.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="_witch" fitHeight="165.0" fitWidth="114.0" layoutX="660.0" layoutY="15.0" visible="false">
+         <image>
+            <Image url="@../imageviews/character/witch/witchwhole.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_penguin" fitHeight="102.0" fitWidth="136.0" layoutX="730.0" layoutY="78.0" visible="false">
+         <image>
+            <Image url="@../imageviews/character/penguin/6.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

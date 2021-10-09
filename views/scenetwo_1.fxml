@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #f0f8ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.f1.s107502509.controller.ScenetwoController">
+   <children>
+      <ImageView fitHeight="264.0" fitWidth="287.0" layoutX="-180.0" layoutY="100.0" rotate="-60.5">
+         <image>
+            <Image url="@../imageviews/scenetwo/rose.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="264.0" fitWidth="287.0" layoutX="-40.0" layoutY="-147.0" rotate="-60.5">
+         <image>
+            <Image url="@../imageviews/scenetwo/rose.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c3275be" height="331.0" layoutX="-250.0" layoutY="-9.0" rotate="-60.4" stroke="TRANSPARENT" strokeType="INSIDE" width="438.0" />
+      <ImageView fitHeight="270.0" fitWidth="295.0" layoutX="97.0" layoutY="-4.0">
+         <image>
+            <Image url="@../imageviews/scenetwo/rose.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="270.0" fitWidth="295.0" layoutX="677.0" layoutY="-4.0">
+         <image>
+            <Image url="@../imageviews/scenetwo/rose.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="270.0" fitWidth="295.0" layoutX="387.0" layoutY="-4.0">
+         <image>
+            <Image url="@../imageviews/scenetwo/rose.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="84.89289855957031" endY="249.69290161132812" layoutX="11.0" layoutY="17.0" startX="84.89288330078125" startY="-30.399993896484375" stroke="#4d200549" />
+      <Line endX="84.3929214477539" endY="248.39291381835938" layoutX="12.0" layoutY="18.0" startX="6.10351571594947E-6" startY="400.0" stroke="#4d200549" />
+      <Line endX="839.9999389648438" endY="248.89291381835938" layoutX="10.0" layoutY="18.0" startX="85.3929214477539" startY="248.89291381835938" stroke="#4d200549" />
+      <Pane layoutX="-1.0" layoutY="417.0" prefHeight="93.0" prefWidth="857.0" style="-fx-background-color: black;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c3275be" height="270.0" layoutX="96.0" layoutY="-3.0" stroke="TRANSPARENT" strokeType="INSIDE" width="762.0" />
+      <ImageView fx:id="_door1lock" fitHeight="264.0" fitWidth="192.0" layoutX="90.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imageviews/sceneone/doorclose.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="_insidedoor" arcHeight="5.0" fill="#102c44" height="248.0" layoutX="130.0" layoutY="13.0" stroke="TRANSPARENT" strokeType="INSIDE" width="98.0" />
+      <ImageView fx:id="_door1open" fitHeight="309.0" fitWidth="149.0" layoutX="130.0" layoutY="-43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imageviews/sceneone/dooropenhalf.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="_time" layoutX="3.0" layoutY="-1.0" text="Time      " textFill="#df3434" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Group layoutX="477.0" layoutY="30.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0a457d57" height="113.0" layoutY="27.0" stroke="TRANSPARENT" strokeType="INSIDE" width="150.0" />
+            <ImageView fitHeight="94.0" fitWidth="145.0" layoutX="3.0" layoutY="35.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/hint.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_paintone" fitHeight="164.0" fitWidth="150.0" onMouseClicked="#PaintoneFall">
+               <image>
+                  <Image url="@../imageviews/scenetwo/paintone.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="260.0" layoutY="31.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0a457d57" height="164.0" layoutX="24.0" stroke="TRANSPARENT" strokeType="INSIDE" width="112.0" />
+            <ImageView fitHeight="75.0" fitWidth="102.0" layoutX="30.0" layoutY="56.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/holeonwall.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0002031e" height="25.0" layoutX="48.0" layoutY="68.0" stroke="#00000004" strokeType="INSIDE" width="62.0" />
+            <ImageView fx:id="_reelcloseout" fitHeight="40.0" fitWidth="53.0" layoutX="50.0" layoutY="72.0" onMouseClicked="#CollectReelclose" rotate="-3.4">
+               <image>
+                  <Image url="@../imageviews/scenetwo/reelclose.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_painttwo" fitHeight="164.0" fitWidth="158.0" onKeyPressed="#PainttwoFall" onMouseClicked="#PainttwoFall">
+               <image>
+                  <Image url="@../imageviews/scenetwo/painttwo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <ImageView fitHeight="171.0" fitWidth="168.0" layoutX="543.0" layoutY="195.0">
+         <image>
+            <Image url="@../imageviews/scenetwo/teatable.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vase" fitHeight="83.0" fitWidth="92.0" layoutX="580.0" layoutY="149.0" onMousePressed="#ShowBigvase" onMouseReleased="#BackVase" visible="false">
+         <image>
+            <Image url="@../imageviews/scenetwo/vase.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="98.0" layoutX="617.0" layoutY="-16.0">
+         <image>
+            <Image url="@../imageviews/scenetwo/light1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="98.0" layoutX="385.0" layoutY="-16.0">
+         <image>
+            <Image url="@../imageviews/scenetwo/light1.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0a457d57" height="166.0" layoutX="708.0" layoutY="31.0" stroke="TRANSPARENT" strokeType="INSIDE" width="135.0" />
+      <ImageView fx:id="_picture" fitHeight="61.0" fitWidth="81.0" layoutX="764.0" layoutY="49.0" onMouseClicked="#PictureFall" rotate="102.0">
+         <image>
+            <Image url="@../imageviews/scenetwo/picture.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_picture2" fitHeight="61.0" fitWidth="81.0" layoutX="726.0" layoutY="233.0" onMousePressed="#ShowBigpicture" onMouseReleased="#BackPicture" visible="false">
+         <image>
+            <Image url="@../imageviews/scenetwo/picture.PNG" />
+         </image>
+      </ImageView>
+      <Group fx:id="_paintthree" layoutX="706.0" layoutY="16.0" onMouseClicked="#TurnPaintthree">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="112.0" layoutX="13.0" layoutY="27.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/paintfour.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="195.0" fitWidth="142.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/paintframe.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <ImageView fx:id="_penguinleft" fitHeight="121.0" fitWidth="98.0" layoutX="127.0" layoutY="254.0" visible="false">
+         <image>
+            <Image url="@../imageviews/character/penguin/penguinone.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_penguinright" fitHeight="110.0" fitWidth="81.0" layoutX="140.0" layoutY="263.0" visible="false">
+         <image>
+            <Image url="@../imageviews/character/penguin/penguintwo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_penguinback" fitHeight="171.0" fitWidth="176.0" layoutX="134.0" layoutY="210.0" visible="false">
+         <image>
+            <Image url="@../imageviews/character/penguin/penguinback.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_penguinfront" fitHeight="127.0" fitWidth="120.0" layoutX="122.0" layoutY="251.0">
+         <image>
+            <Image url="@../imageviews/character/penguin/penguinfront.gif" />
+         </image>
+      </ImageView>
+      <GridPane layoutY="423.0" prefHeight="76.0" prefWidth="850.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+               <children>
+                  <ImageView fx:id="_reelclosein" fitHeight="76.0" fitWidth="86.0" layoutX="-3.0" layoutY="-2.0" onMouseClicked="#ShowReelopen" visible="false">
+                     <image>
+                        <Image url="@../imageviews/scenetwo/reelclose.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="74.0" prefWidth="81.0" style="-fx-background-color: white;" GridPane.columnIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="79.0" prefWidth="84.0" style="-fx-background-color: white;" GridPane.columnIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="76.0" prefWidth="77.0" style="-fx-background-color: white;" GridPane.columnIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="9">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+         </children>
+      </GridPane>
+      <Group fx:id="_vasepiece" layoutX="568.0" layoutY="120.0" onMouseClicked="#Puzzle">
+         <children>
+            <ImageView fitHeight="83.0" fitWidth="55.0" layoutX="24.0" layoutY="38.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/vasepiece5.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="110.0" fitWidth="81.0" layoutX="18.0" layoutY="15.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/vasepiece6.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="68.0" layoutX="2.0" layoutY="34.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/vasepiece7.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="48.0" layoutY="72.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/vasepiece8.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="93.0" fitWidth="42.0" layoutX="37.0" layoutY="24.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/vasepiece9.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="113.0" fitWidth="62.0" layoutX="18.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/vasepiece10.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="33.0" layoutY="76.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/vasepiece1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="76.0" fitWidth="48.0" layoutX="43.0" layoutY="93.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/vasepiece2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="62.0" layoutX="67.0" layoutY="56.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/vasepiece3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="62.0" layoutX="36.0" layoutY="71.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/vasepiece4.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="_bigvase" layoutX="220.0" layoutY="-21.0" visible="false">
+         <children>
+            <ImageView fitHeight="466.0" fitWidth="474.0">
+               <image>
+                  <Image url="@../imageviews/scenetwo/vase.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="182.0" layoutY="316.0" opacity="0.03" prefHeight="76.0" prefWidth="142.0" text="5472">
+               <font>
+                  <Font name="Stencil" size="56.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <ImageView fx:id="_picturebig" fitHeight="231.0" fitWidth="295.0" layoutX="294.0" layoutY="96.0" visible="false">
+         <image>
+            <Image url="@../imageviews/scenetwo/picture.PNG" />
+         </image>
+      </ImageView>
+      <Group fx:id="_reelopen" layoutX="291.0" layoutY="17.0" onMouseClicked="#CloseReel" visible="false">
+         <children>
+            <ImageView fitHeight="387.0" fitWidth="301.0" onMouseClicked="#CloseReel">
+               <image>
+                  <Image url="@../imageviews/scenetwo/reelopen.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="15.0" layoutY="41.0" prefHeight="306.0" prefWidth="271.0" text="If I see the penguin &#10;escape,I will capture&#10;it back to tne cage.&#10;I can watch the penguin&#10; from the window.&#10;Be careful!&#10;                         by">
+               <font>
+                  <Font name="Bradley Hand ITC" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="85.0" fitWidth="71.0" layoutX="216.0" layoutY="256.0">
+               <image>
+                  <Image url="@../imageviews/character/witch/witchwhole.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+   </children>
+</Pane>

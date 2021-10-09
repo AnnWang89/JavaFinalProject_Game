@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #f0f8ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.f1.s107502509.controller.ScenethreeController">
+   <children>
+      <ImageView fitHeight="274.0" fitWidth="426.0" layoutX="424.0" layoutY="-1.0">
+         <image>
+            <Image url="@../imageviews/scenethree/wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="274.0" fitWidth="362.0" layoutX="63.0" layoutY="-1.0">
+         <image>
+            <Image url="@../imageviews/scenethree/wallpaper2.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="274.0" fitWidth="426.0" layoutX="-356.0" layoutY="-1.0" rotate="-2.5">
+         <image>
+            <Image url="@../imageviews/scenethree/wallpaper.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="533.0000610351562" layoutX="317.0" layoutY="272.0" startX="-253.5858154296875" startY="0.29290771484375" />
+      <Line endX="-155.7929229736328" endY="100.5" layoutX="219.0" layoutY="172.0" startX="-155.7929229736328" startY="-172.0" />
+      <Line endX="-149.00001525878906" endY="210.00003051757812" layoutX="148.0" layoutY="205.0" startX="-85.29290771484375" startY="68.0" />
+      <ImageView fitHeight="370.0" fitWidth="65.0" layoutX="-3.0" layoutY="55.0">
+         <image>
+            <Image url="@../imageviews/scenethree/doortwo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="256.0" fitWidth="170.0" layoutX="648.0" layoutY="27.0" onMouseClicked="#OnDoorPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imageviews/scenethree/doorthree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="33.0" layoutX="692.0" layoutY="172.0" onMouseClicked="#CombinationLock" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imageviews/scenethree/codelock.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-1.0" layoutY="415.0" prefHeight="93.0" prefWidth="857.0" style="-fx-background-color: black;" />
+      <Group layoutX="699.0" layoutY="30.0">
+         <children>
+            <Rectangle fx:id="_dooropen1" arcHeight="5.0" arcWidth="5.0" fill="#b2daff" height="229.0" layoutY="4.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="105.0" />
+            <ImageView fx:id="_dooropen2" fitHeight="238.0" fitWidth="81.0" layoutX="26.0" visible="false">
+               <image>
+                  <Image url="@../imageviews/scenethree/doorthreehalf.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_dooropen3" fitHeight="23.0" fitWidth="26.0" layoutX="25.0" layoutY="98.0" visible="false">
+               <image>
+                  <Image url="@../imageviews/scenethree/codelock.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D z="0.5" />
+               </rotationAxis>
+            </ImageView>
+         </children>
+      </Group>
+      <Label fx:id="_time" layoutX="3.0" layoutY="-1.0" text="Time      " textFill="#df3434" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="171.0" fitWidth="227.0" layoutX="337.0" layoutY="155.0">
+         <image>
+            <Image url="@../imageviews/scenethree/cabinetTV2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="151.0" fitWidth="185.0" layoutX="218.0" layoutY="193.0" rotate="-8.0">
+         <image>
+            <Image url="@../imageviews/scenethree/sofa2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="151.0" fitWidth="170.0" layoutX="466.0" layoutY="194.0" rotate="175.0">
+         <image>
+            <Image url="@../imageviews/scenethree/sofa2.png" />
+         </image>
+         <rotationAxis>
+            <Point3D y="1.0" />
+         </rotationAxis>
+      </ImageView>
+      <ImageView fx:id="_tvcontrolout" fitHeight="35.0" fitWidth="33.0" layoutX="525.0" layoutY="260.0" onMouseClicked="#CollectTvcontrol" rotate="-34.4">
+         <image>
+            <Image url="@../imageviews/scenethree/tvcontrol.png" />
+         </image>
+         <rotationAxis>
+            <Point3D x="1.0" z="1.0" />
+         </rotationAxis>
+      </ImageView>
+      <ImageView fx:id="_ball" fitHeight="93.0" fitWidth="98.0" layoutX="327.0" layoutY="280.0" rotate="20.0">
+         <image>
+            <Image url="@../imageviews/scenethree/ball.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_tv" fitHeight="143.0" fitWidth="208.0" layoutX="343.0" layoutY="53.0">
+         <image>
+            <Image url="@../imageviews/scenethree/tvtwo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_penguinleft" fitHeight="121.0" fitWidth="98.0" layoutX="14.0" layoutY="240.0" visible="false">
+         <image>
+            <Image url="@../imageviews/character/penguin/penguinone.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_penguinright" fitHeight="110.0" fitWidth="81.0" layoutX="27.0" layoutY="249.0">
+         <image>
+            <Image url="@../imageviews/character/penguin/penguintwo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_penguinfront" fitHeight="127.0" fitWidth="120.0" layoutX="8.0" layoutY="234.0" visible="false">
+         <image>
+            <Image url="@../imageviews/character/penguin/penguinfront.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_penguinback" fitHeight="171.0" fitWidth="176.0" layoutX="21.0" layoutY="196.0" visible="false">
+         <image>
+            <Image url="@../imageviews/character/penguin/penguinback.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="1.0" layoutY="421.0" prefHeight="76.0" prefWidth="850.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+               <children>
+                  <ImageView fx:id="_tvcontrolin" fitHeight="63.0" fitWidth="58.0" layoutX="9.0" layoutY="4.0" onMouseClicked="#ControlTV" visible="false">
+                     <image>
+                        <Image url="@../imageviews/scenethree/tvcontrol.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="74.0" prefWidth="81.0" style="-fx-background-color: white;" GridPane.columnIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="79.0" prefWidth="84.0" style="-fx-background-color: white;" GridPane.columnIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="76.0" prefWidth="77.0" style="-fx-background-color: white;" GridPane.columnIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="9">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+            </Pane>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="151.0" fitWidth="120.0" layoutX="175.0" layoutY="60.0">
+         <image>
+            <Image url="@../imageviews/scenethree/outside.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="52.0" layoutX="227.0" layoutY="125.0">
+         <image>
+            <Image url="@../imageviews/character/witch/witchhalf.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_windowclose" fitHeight="151.0" fitWidth="126.0" layoutX="167.0" layoutY="63.0" visible="false">
+         <image>
+            <Image url="@../imageviews/scenethree/windowclose.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_windowopen" fitHeight="163.0" fitWidth="195.0" layoutX="132.0" layoutY="56.0" onMouseClicked="#CloseWindow">
+         <image>
+            <Image url="@../imageviews/scenethree/windowopen.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="_tvback" arcHeight="5.0" arcWidth="5.0" height="104.0" layoutX="360.0" layoutY="66.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="173.0">
+         <fill>
+            <LinearGradient endX="0.7022899598565719" endY="0.8435114449217119" startX="0.1297710142062821">
+               <stops>
+                  <Stop color="#f5f6f7" />
+                  <Stop color="#009dff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="_fish" fitHeight="33.0" fitWidth="33.0" layoutX="360.0" layoutY="139.0" visible="false">
+         <image>
+            <Image url="@../imageviews/scenethree/fish.png" />
+         </image>
+         <rotationAxis>
+            <Point3D x="1.0" />
+         </rotationAxis>
+      </ImageView>
+      <ImageView fx:id="_fish1" fitHeight="33.0" fitWidth="33.0" layoutX="360.0" layoutY="139.0" rotate="270.0" visible="false">
+         <image>
+            <Image url="@../imageviews/scenethree/fish.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

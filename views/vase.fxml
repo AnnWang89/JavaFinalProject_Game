@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="415.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.f1.s107502509.controller.VaseController">
+   <children>
+      <Label fx:id="_time" layoutX="3.0" layoutY="-1.0" prefHeight="35.0" prefWidth="305.0" text="Time      " textFill="#df3434" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="_vasewhole1" fitHeight="235.0" fitWidth="234.0" layoutX="89.0" layoutY="51.0" opacity="0.21">
+         <image>
+            <Image url="@../imageviews/scenetwo/vase.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vasepiece1" fitHeight="200.0" fitWidth="122.0" layoutX="323.0" layoutY="-14.0" onMouseDragged="#DragPiece1" onMouseReleased="#PutPiece1">
+         <image>
+            <Image url="@../imageviews/scenetwo/vasepiece7.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vasepiece2" fitHeight="200.0" fitWidth="122.0" layoutX="262.0" layoutY="200.0" onMouseDragged="#DragPiece2" onMouseReleased="#PutPiece2">
+         <image>
+            <Image url="@../imageviews/scenetwo/vasepiece1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vasepiece3" fitHeight="200.0" fitWidth="122.0" layoutX="28.0" layoutY="176.0" onMouseDragged="#DragPiece3" onMouseReleased="#PutPiece3">
+         <image>
+            <Image url="@../imageviews/scenetwo/vasepiece2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vasepiece4" fitHeight="200.0" fitWidth="122.0" layoutX="217.0" layoutY="212.0" onMouseDragged="#DragPiece4" onMouseReleased="#PutPiece4">
+         <image>
+            <Image url="@../imageviews/scenetwo/vasepiece3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vasepiece5" fitHeight="200.0" fitWidth="122.0" layoutX="287.0" layoutY="242.0" onMouseDragged="#DragPiece5" onMouseReleased="#PutPiece5">
+         <image>
+            <Image url="@../imageviews/scenetwo/vasepiece4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vasepiece6" fitHeight="200.0" fitWidth="122.0" layoutX="262.0" layoutY="-42.0" onMouseDragged="#DragPiece6" onMouseReleased="#PutPiece6">
+         <image>
+            <Image url="@../imageviews/scenetwo/vasepiece6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vasepiece7" fitHeight="200.0" fitWidth="122.0" layoutX="-53.0" layoutY="142.0" onMouseDragged="#DragPiece7" onMouseReleased="#PutPiece7">
+         <image>
+            <Image url="@../imageviews/scenetwo/vasepiece8.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vasepiece8" fitHeight="200.0" fitWidth="122.0" layoutX="24.0" layoutY="186.0" onMouseDragged="#DragPiece8" onMouseReleased="#PutPiece8">
+         <image>
+            <Image url="@../imageviews/scenetwo/vasepiece9.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vasepiece9" fitHeight="200.0" fitWidth="122.0" layoutX="24.0" layoutY="-42.0" onMouseDragged="#DragPiece9" onMouseReleased="#PutPiece9">
+         <image>
+            <Image url="@../imageviews/scenetwo/vasepiece5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vasepiece10" fitHeight="200.0" fitWidth="122.0" layoutX="287.0" layoutY="-142.0" onMouseDragged="#DragPiece10" onMouseReleased="#PutPiece10">
+         <image>
+            <Image url="@../imageviews/scenetwo/vasepiece10.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_vasewhole" fitHeight="235.0" fitWidth="234.0" layoutX="89.0" layoutY="51.0" visible="false">
+         <image>
+            <Image url="@../imageviews/scenetwo/vase.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="185.0" layoutY="337.0" mnemonicParsing="false" onAction="#Finish" text="Done">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="_wrong" layoutX="168.0" layoutY="17.0" text="Wrong" textFill="#eae1e1" visible="false">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
